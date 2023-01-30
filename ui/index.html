@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Amazon Lex Q&As</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="menu">
+                <p class="welcome">Amazon Lex Q&As<b></b></p>
+            </div>
+            <div id="chatbox">
+            </div>
+            <form name="message" action="">
+                <input name="usermsg" type="text" id="usermsg" />
+                <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+            </form>
+        </div>
+        <br>
+        <div id="infobox">
+            Example questions:
+            <ul>
+                <li>Hi (lex => Fallback intent)</li>
+                <li>What is amazon lex? (lex)</li>
+                <li>Is amazon lex a paid service? (lex)</li>
+                <li>Can I install lex on my mac? (lex)</li>
+                <li>What's an intent? (kendra)</li>
+                <li>Can I design a bot? (kendra)</li>
+                <li>What transcript formats can I use? (kendra)</li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            //If user submits the form 
+            $("#submitmsg").click(function () {
+                var chatbotUrl = 'https://fk43rl5ewibqzwq7oai3zvnrsq0dzugd.lambda-url.us-west-2.on.aws/chat?q=';
+                var clientmsg = $("#usermsg").val();
+                $('#chatbox').append("<div class='msgln'><b class='user-name'>Me:</b>"+clientmsg+"<br></div>")
+                $('#chatbox').scrollTop(50000);
+                $("#usermsg").val('');
+                $("#submitmsg").val('Sending...');
+                $("#submitmsg").prop('disabled', true);
+                $.get(chatbotUrl + clientmsg, function( data ) {
+                    $("#usermsg").val('');
+                    $("#submitmsg").val('Send');
+                    $("#submitmsg").prop('disabled', false);
+                    $('#chatbox').append("<div class='msgln'><b class='chat-bot'>Bot:</b>"+data+"<br></div>")
+                    $('#chatbox').scrollTop(50000);                    
+                });
+                return false;
+            });
+        </script>
+    </body>
+</html>

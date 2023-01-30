@@ -1,0 +1,52 @@
+{
+  "version": "2.0",
+  "routeKey": "$default",
+  "rawPath": "/chat",
+  "rawQueryString": "q=Is%20it%20free",
+  "headers": {
+    "sec-fetch-mode": "navigate",
+    "x-amzn-tls-version": "TLSv1.2",
+    "sec-fetch-site": "none",
+    "accept-language": "en-US,en;q=0.9",
+    "x-forwarded-proto": "https",
+    "x-forwarded-port": "443",
+    "dnt": "1",
+    "x-forwarded-for": "27.32.44.63",
+    "sec-fetch-user": "?1",
+    "pragma": "no-cache",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "x-amzn-tls-cipher-suite": "ECDHE-RSA-AES128-GCM-SHA256",
+    "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-amzn-trace-id": "Root=1-63d721ac-4183a6f138b9895d0e939d65",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "host": "mta7opkzjbihjbt5j3jndlpsbe0extwq.lambda-url.ap-northeast-1.on.aws",
+    "upgrade-insecure-requests": "1",
+    "cache-control": "no-cache",
+    "accept-encoding": "gzip, deflate, br",
+    "sec-fetch-dest": "document",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+  },
+  "queryStringParameters": {
+    "q": "Is it free"
+  },
+  "requestContext": {
+    "accountId": "anonymous",
+    "apiId": "mta7opkzjbihjbt5j3jndlpsbe0extwq",
+    "domainName": "mta7opkzjbihjbt5j3jndlpsbe0extwq.lambda-url.ap-northeast-1.on.aws",
+    "domainPrefix": "mta7opkzjbihjbt5j3jndlpsbe0extwq",
+    "http": {
+      "method": "GET",
+      "path": "/chat",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "27.32.44.63",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+    },
+    "requestId": "1452ed2c-a116-4e1a-8095-46a72c74ee64",
+    "routeKey": "$default",
+    "stage": "$default",
+    "time": "30/Jan/2023:01:47:24 +0000",
+    "timeEpoch": 1675043244067
+  },
+  "isBase64Encoded": false
+}

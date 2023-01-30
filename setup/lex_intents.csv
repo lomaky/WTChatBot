@@ -1,0 +1,5 @@
+qna_what_is_lex;What is Amazon Lex;Amazon Lex is a service for building conversational interfaces using voice and text
+qna_is_lex_managed;Is Amazon Lex a managed service;Amazon Lex is a completely managed service so you don’t have to manage scaling of resources or maintenance of code.
+qna_is_lex_free;Is Amazon Lex a free service;No, Amazon Lex is a paid service.
+qna_is_lex_smart;Does Amazon Lex get more intelligent over time;Yes. Amazon Lex uses deep learning to improve over time.
+qna_can_install_on_pc;Can I install Amazon Lex on my computer;No, Amazon Lex is a completely managed service by AWS.
